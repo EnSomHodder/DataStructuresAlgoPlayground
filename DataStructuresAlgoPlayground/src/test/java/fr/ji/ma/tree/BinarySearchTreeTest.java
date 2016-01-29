@@ -19,5 +19,14 @@ public class BinarySearchTreeTest {
 		
 		System.out.println("starts postorder traversal");
 		bst1.recursivePostOrderTraverse(bst1.getRoot());
+		
+		System.out.println("smallest value is " + bst1.getMinimum().getValue());
+		
+		System.out.println("biggest value is " + bst1.getMaxmimum().getValue());
+		
+		
+		System.out.println(bst1.find(5) != null ? "5 is found" : "5 doesn't exist in the given BST");
+		
+		System.out.println(bst1.find(10) != null ? "10 is found" : "10 doesn't exist in the given BST");
 	}
 }

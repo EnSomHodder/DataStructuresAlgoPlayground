@@ -82,4 +82,18 @@ public class BinarySearchTree<T extends Comparable<T>> {
 			System.out.println(localRoot.getValue().toString());
 		}
 	}
+	
+	public Node<T> getMinimum() {
+		Node<T> min = this.root;
+		while (min.getLeft() != null)
+			min = min.getLeft();
+		return min;
+	}
+	
+	public Node<T> getMaxmimum() {
+		Node<T> max = this.root;
+		while (max.getRight() != null)
+			max = max.getRight();
+		return max;
+	}
 }
