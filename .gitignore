@@ -1,0 +1,10 @@
+.metadata/*
+.recommenders/*
+RemoteSystemsTempFiles/*
+*/target/
+
+*.class
+*.jar
+*.war
+*.ear
+
