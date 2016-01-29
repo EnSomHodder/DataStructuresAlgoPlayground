@@ -28,5 +28,10 @@ public class BinarySearchTreeTest {
 		System.out.println(bst1.find(5) != null ? "5 is found" : "5 doesn't exist in the given BST");
 		
 		System.out.println(bst1.find(10) != null ? "10 is found" : "10 doesn't exist in the given BST");
+		
+		bst1.delete(2);
+		bst1.delete(1);
+		System.out.println("starts inorder traversal after removing 2");
+		bst1.recursiveInOrderTraverse(bst1.getRoot());
 	}
 }
